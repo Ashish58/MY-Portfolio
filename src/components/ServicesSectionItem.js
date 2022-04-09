@@ -27,12 +27,13 @@ export default function ServicesSectionitem({
   return (
     <ItemStyles>
         <div className="servicesItem_icon">
-        {icon}
+        {icon}   
+         </div>
         <div className="servicesItem_title">{title}</div>
         <PText>
            {desc}
         </PText>
-        </div>
+    
     </ItemStyles>
   )
 }
