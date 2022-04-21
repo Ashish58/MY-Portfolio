@@ -4,12 +4,15 @@ import styled from 'styled-components';
 import { MdMenu, MdClose } from 'react-icons/md';
 
 const NavMenuStyles = styled.div`
+
   position: fixed;
   z-index: 100;
   top: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--dark-bg);
+  background:rgb(8 8 8 / 62%); 
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   ul{
     max-width=1200px;
     margin:0 auto;
@@ -20,14 +23,16 @@ const NavMenuStyles = styled.div`
       border-radius:8px;
       transition:0.3 ease background-color;
       &:hover{
-        background-color:var(--deep-dark)
+        background-color:grey;
+    border-radius:7px;
+    color:white;
       }
     }
     a{
       display:inline-block;
       font-family:'RobotoMono Regular';
       padding:1rem 2rem;
-      font-size:2rem;
+      font-size:2.5rem;
       color:var(--gary-1);
       outline:none;
     }
@@ -50,6 +55,11 @@ const NavMenuStyles = styled.div`
   .closeNavIcon{
     display:none;
   }
+
+ 
+  }
+  
+
   @media only screen and (max-width:768px){
     padding:0;
     .hide-item{
@@ -119,7 +129,7 @@ export default function NavMenu() {
             role="button"
             onKeyDown={() => SetShowNav(!showNav)}
             tabIndex={0}
-          >
+          className="bgcol">
             Home
           </NavLink>
         </li>
@@ -130,7 +140,7 @@ export default function NavMenu() {
             role="button"
             onKeyDown={() => SetShowNav(!showNav)}
             tabIndex={0}
-          >
+            className="bgcol">
             About
           </NavLink>
         </li>
@@ -141,7 +151,7 @@ export default function NavMenu() {
             role="button"
             onKeyDown={() => SetShowNav(!showNav)}
             tabIndex={0}
-          >
+            className="bgcol">
             Projects
           </NavLink>
         </li>
@@ -152,7 +162,7 @@ export default function NavMenu() {
             role="button"
             onKeyDown={() => SetShowNav(!showNav)}
             tabIndex={0}
-          >
+            className="bgcol">
             Contact
           </NavLink>
         </li>

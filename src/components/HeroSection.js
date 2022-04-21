@@ -5,6 +5,11 @@ import PText from './PText';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import styled from 'styled-components';
+import fbicon from "../assets/images/fb.png";
+import instaicon from "../assets/images/instagram.png";
+import twicon from "../assets/images/twitter.png";
+import linkicon from "../assets/images/linkedin.png";
+
 
 
 
@@ -99,7 +104,7 @@ const HeroStyles = styled.div`
       }
     }
   }
-
+  
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
@@ -160,13 +165,14 @@ export default function HeroSection() {
         <div className="container">
           <h1 className="hero_heading">
             <span>Hello, This is</span>
-            <span className="hero_name">Ashish Anand</span>
+            <span className="hero_name">
+              Ashish Anand</span>
           </h1>
           <div className="hero_img">
             <img src={HeroImg} alt="" />
           </div>
           <div className="hero_info">
-            <PText>
+            <PText className="text">
             I’m a FullStack web developer. Focused on creating amazing UIs to solve business problems around the globe.
             </PText>
             <Button btnText="see my works" btnLink="/projects" />
@@ -184,34 +190,34 @@ export default function HeroSection() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    FB
+                    <img src={fbicon} alt="icon" />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com/profile.php?id=100007992660232"
+                    href="https://www.twitter.com"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    TW
+                 <img src={twicon} alt="icon" />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com/profile.php?id=100007992660232r"
+                    href="https://www.instagram.com/ashishanand186/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    IG
+                   <img src={instaicon} alt="icon" />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.facebook.com/profile.php?id=100007992660232"
+                    href="https://www.linkedin.com/in/ashish-anand-33b322222/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    LI
+                     <img src={linkicon} alt="icon" />
                   </a>
                 </li>
               </ul>

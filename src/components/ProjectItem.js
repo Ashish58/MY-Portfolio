@@ -5,7 +5,7 @@ import ProjectImg from '../assets/images/projectImg.png';
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
-    width: 100%;
+    width: 99%;
     height: 400px;
     border-radius: 12px;
     overflow: hidden;
@@ -14,6 +14,12 @@ const ProjectItemStyles = styled.div`
     img {
       height: 100%;
     }
+  }
+  .projectItem__img:hover{
+    width: 100%;
+    height: 405px;
+    box-shadow:1px 1px 7px white;
+   
   }
   .projectItem__info {
     margin-top: 1rem;

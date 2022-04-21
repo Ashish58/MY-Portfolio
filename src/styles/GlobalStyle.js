@@ -7,7 +7,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #262626;
+
+    --dark-bg: #0c0c0c;
+    --dark-bg: #131313;
+     ${'' /* --dark-bg: #262626; */}
     --gray-1: #BCB4B4;
     --deep-dark: #1E1E1E;
     --gray-2: #363636;
@@ -17,6 +20,7 @@ const GlobalStyles = createGlobalStyle`
   html{
     font-size: 10px;
     font-family: 'Roboto Mono';
+    background-color: #ffffff;
     background-color: var(--dark-bg);
   }
   ul,li{
@@ -47,6 +51,7 @@ const GlobalStyles = createGlobalStyle`
       background-color: var(--dark-bg);
     }
     .scrollbar-track.scrollbar-track-y {
+      z-index:101;
       background: var(--deep-dark);
       .scrollbar-thumb-y {
         background: var(--gray-1);

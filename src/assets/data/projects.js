@@ -1,9 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+import textutils from '../images/textutils.jpg';
+import quoteImg from '../images/quote.png';
+import hearticon from '../images/heart.jpg';
+import AshishImg from '../images/Ashish.jpg';
 
 const projects = [
   {
@@ -11,34 +10,27 @@ const projects = [
     name: 'Text-Utils',
     desc:
       'It is an utility website made using react which counts the number of characters and words, converts the word into upper or lower case.',
-    img: UTrackerImg,
+    img: textutils,
   },
+  {
+    id: uuidv4(),
+    name: "Ashish Portfolio",
+    desc:'The portfolio is made using ReactJs.',
+    img: AshishImg,
+  },
+  
+  {
+    id: uuidv4(),
+    name: 'Heart_Disease_Prediction',
+    desc:'A machine learning model to classify if the patient is at risk of heart attack or not based on the given data of a patient.',
+    img: hearticon,
+  },
+  
   {
     id: uuidv4(),
     name: 'My-Quote',
     desc:'A simple React.js app that displays and shares famous quotes',
-    img: GreenCtgImg,
-  },
-  {
-    id: uuidv4(),
-    name: 'Coin Tracker',
-    desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
-  },
-  {
-    id: uuidv4(),
-    name: "Cavin's Portfolio",
-    desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
-  },
-  {
-    id: uuidv4(),
-    name: 'Tracking Soft',
-    desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+    img: quoteImg,
   },
 ];
 
