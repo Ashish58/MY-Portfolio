@@ -159,7 +159,7 @@ export default function About() {
 
               <AboutInfoItem
                 title="Intern:"
-                items={['Internship at HighRadius Corporation']}
+                items={['Internship at FinTech Company']}
               />
             </div>
           </div>
